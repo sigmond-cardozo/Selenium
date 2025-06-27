@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,6 +34,10 @@ public class BrowserDriverFactory {
 
 		case "firefox":
 			driver.set(new FirefoxDriver());
+			break;
+
+		case "safari":
+			driver.set(new SafariDriver());
 			break;
 
 		default:
