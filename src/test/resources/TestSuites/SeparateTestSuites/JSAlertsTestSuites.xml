@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="JS Alerts Test" verbose="1" parallel="tests" thread-count="10">
+    <test name="JS Alerts Prompt Test">
+        <parameter name="alertText" value="chrome"></parameter>
+        <classes>
+            <class name="com.herokuapp.theinternet.javascriptalerts.JavaScriptAlertsTest"/>
+        </classes>
+    </test>
+</suite>
