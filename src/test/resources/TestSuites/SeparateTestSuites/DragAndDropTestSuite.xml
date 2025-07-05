@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DragAndDropTestSuite" verbose="1">
+
+	<test name="DragAndDropTests-chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.dragAndDrop.DragAndDropTest" />
+		</classes>
+	</test>
+
+	<test name="DragAndDropTests-chrome2">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.herokuapp.theinternet.dragAndDrop.DragAndDropTest" />
+		</classes>
+	</test>
+
+</suite>
