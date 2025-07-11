@@ -20,6 +20,9 @@ public class BasePageObject {
 	public BasePageObject(WebDriver driver, Logger log) {
 		this.driver = driver;
 		this.log = log;
+
+		//enable this when using @FindBy
+		//PageFactory.initElements(driver, this);
 	}
 
 	/** Open page with given URL */
