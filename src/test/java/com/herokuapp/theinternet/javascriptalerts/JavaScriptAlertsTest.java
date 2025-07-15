@@ -68,12 +68,12 @@ public class JavaScriptAlertsTest extends TestUtilities {
 
         javaScriptAlertsPage.openJsPrompt();
 
-        softAssert.assertEquals(javaScriptAlertsPage.getAlertText()+"[delete]","I am a JS prompt");
+        softAssert.assertEquals(javaScriptAlertsPage.getAlertText(),"I am a JS prompt");
 
         javaScriptAlertsPage.enterAlertText(alertText);
         javaScriptAlertsPage.acceptAlert();
 
-        softAssert.assertEquals(javaScriptAlertsPage.getResultText()+"]","You entered: "+alertText);
+        softAssert.assertEquals(javaScriptAlertsPage.getResultText(),"You entered: "+alertText);
 
         softAssert.assertAll();
     }
