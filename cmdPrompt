@@ -1,0 +1,2 @@
+mvn clean test "-DsuiteXmlFile=SeparateTestSuites/CheckboxesTestSuite.xml"
+mvn clean test "-DsuiteXmlFile=FullUITestSuite.xml"
